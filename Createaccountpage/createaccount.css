@@ -1,0 +1,117 @@
+/* General Page Setup */
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/*Card Layout for Login/Signup */
+
+.container,
+.signup-container {
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    width: 380px;
+    text-align: center;
+}
+
+
+/*Header text */
+
+h2,
+h1 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/*Input fields */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2a2a72;
+    box-shadow: 0 0 4px rgba(42, 42, 114, 0.2);
+}
+
+
+/*Buttons */
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2e7d4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1f5a38;
+}
+
+
+/*Links */
+
+a {
+    color: #2e7d4f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*  Create Account or Already Have One Section */
+
+.signup-container p,
+.container p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
+/*Responsive Design */
+
+@media (max-width: 480px) {
+    .container,
+    .signup-container {
+        width: 90%;
+        padding: 25px;
+    }
+    h2,
+    h1 {
+        font-size: 22px;
+    }
+}

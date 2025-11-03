@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+
+/* About LinkNest one css */
+
+.head {
+    text-align: center;
+    /* max-width: 1250px; */
+    margin: 200px 0px;
+    font-family: 'poppins', sans-serif;
+}
+
+.main-text {
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+    margin: 10px 0;
+}
+
+.main-text span {
+    color: #ff5733;
+    font-family: 'pacifico', cursive;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.tagline {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #ff5733;
+    animation: typing 4s steps(35) 1s forwards, blink 0.7s step-end infinite;
+    display: inline-block;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #ff5733;
+    }
+}
+
+.LinkNest {
+    position: absolute;
+    /* allows precise placement */
+    top: 20px;
+    /* distance from top */
+    right: 30px;
+    /* distance from right edge */
+    text-align: right;
+    /* align text inside right side */
+    font-family: 'poppins', sans-serif;
+}
+
+.LinkNest p {
+    display: inline-block;
+    margin-right: 10px;
+    color: #C53675;
+    font-weight: 500;
+}
+
+.LinkNest button {
+    background-color: #C53678;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.LinkNest button:hover {
+    background-color: #C53675;
+    transform: scale(1.05);
+}
+
+
+/* From page  */
+
+.formPage {
+    display: flex;
+    align-items: center;
+    background: #ff5733;
+    padding: 40px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 460px;
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+}
+
+.categorySelect {
+    display: block;
+    margin: 10px solid;
+}
+
+.formPage input,
+.formPage select {
+    width: 100%px;
+    padding: 10px;
+    margin: 10px solid #ff5733;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.formPage button:hover {
+    background-color: #e14b2c;
+    transform: scale(1.05);
+}
+
+.but {
+    border-radius: 10px;
+}
