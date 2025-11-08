@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* border: 5px solid black; */
+    /* background: linear-gradient(135deg, #f0f2f5, #ffffff);
+     */
+    background: linear-gradient(120deg, #f0e8e5, #ffffff);
+}
+
+.headersection {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.center ul li {
+    list-style: none;
+    display: inline-flex;
+    margin: 0px 10px;
+}
+
+.tittle img {
+    height: 6.5em;
+    width: auto;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.left {
+    flex: 2;
+}
+
+.center {
+    flex: 4;
+    /* border: 1px solid black; */
+}
+
+.search {
+    flex: 2;
+    padding: 27px 0;
+}
+
+.search input:focus {
+    border-color: #ff5733;
+    box-shadow: 0 0 6px rgba(255, 87, 51, 0.3);
+}
+
+.search input {
+    display: 260px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.right {
+    flex: 4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 0;
+    gap: 15px;
+}
+
+.signin {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signin:hover {
+    background-color: #ff784e;
+}
+
+.cart {
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.cart:hover {
+    color: #ff5733;
+}
+
+
+/* // pastebox css */
+
+.pastebox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: linear-gradient(135deg, #f9f9f9, #f0f0f0);
+}
+
+.pastebox-form {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.pastebox-form h2 {
+    margin-bottom: 20px;
+    color: #ff5733;
+}
+
+.pastebox-form input,
+.pastebox-form select {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+.pastebox-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5733;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.pastebox-form button:hover {
+    background-color: #e04e2b;
+}
