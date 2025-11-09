@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Pastebox = () => {
+const Pastebox = ({onAddLink}) => {
   const [link, setLink] = useState('');
   const [category, setCategory] = useState('');
   const [newCategory, setNewCategory] = useState('');
@@ -21,9 +21,11 @@ const Pastebox = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const selectedCategory = showNewCategory ? newCategory : category;
-    console.log('Link:', link);
-    console.log('Category:', selectedCategory);
-    alert(`Link: ${link}\nCategory: ${selectedCategory}`);
+    onAddLink(link,selectedCategory);
+    setLink('');
+    setCategory('');
+    setNewCategory('');
+    setShowNewCategory('');
   };
 
   return (
